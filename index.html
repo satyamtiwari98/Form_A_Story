@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Form a Story</title>
+</head>
+
+<body>
+    <section id="top">
+        <img src="img.png" alt="Image is Missing" />
+    </section>
+
+    <section id="main">
+        <h1>
+            Complete The Form - <br>Complete The Story !!!
+        </h1>
+        <hr>
+        <br>
+        <form action="story.html" method="GET">
+
+            <label>Animal :- </label><br>
+            <input type="text" name="animal1" placeholder="Enter First Animal Name" id="animal1name" required />
+
+            <br><br>
+
+            <label>Another Animal :- </label><br>
+            <input type="text" name="animal2" placeholder="Enter Second Animal Name" id="animal2name" required />
+
+            <br><br>
+
+            <label>One More Animal :- </label><br>
+            <input type="text" name="animal3" placeholder="Enter Third Animal Name" id="animal3name" required />
+
+            <br><br>
+
+            <label>Adjective (past tense) :- </label><br>
+            <input type="text" name="adj1" placeholder="Adjective in Past Tense" id="adjective" required />
+
+            <br><br>
+
+            <label>Verb (ends in -ing) :- </label><br>
+            <input type="text" name="verb1" placeholder="ING form of Verb" id="verb" required />
+
+            <br><br>
+
+            <label>Number :- </label><br>
+            <input type="number" name="num1" placeholder="Enter any Desired Number" id="requiredNumber" required />
+
+            <br><br>
+
+            <span>Yes or No :- </span>
+            <input type="radio" name="answer" value="yes" required id="yes" />
+            <label>Yes</label>
+            <input type="radio" name="answer" value="no" id="no" required />
+            <label>No</label>
+
+            <br><br>
+
+            <label>Relative speed :- </label><br>
+            <select name="speed" id="relativeSpeed" required>
+                <option value="faster">Faster</option>
+                <option value="slower">Slower</option>
+            </select>
+
+            <br><br>
+
+            <label>Motivational Quote :- </label><br>
+            <input type="text" name="quote" placeholder="Enter Something" required id="motivationalQuote"
+                list="choices" />
+            <datalist id="choices">
+                <option value="Winner !!"></option>
+                <option value="Second Winner !!"></option>
+                <option value="Third Winner !!!"></option>
+            </datalist>
+
+            <br><br>
+
+            <label>Meaningful Message :- </label><br>
+            <textarea name="message" cols="40" rows="8" placeholder="Write Your Message !!" id="message"
+                required></textarea>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Form My Story !!" id="submitButton" onclick="sendData()" />
+
+        </form>
+
+    </section>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
